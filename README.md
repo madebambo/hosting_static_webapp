@@ -1,0 +1,2 @@
+# hosting_static_webapp
+hosting_static_webapp
