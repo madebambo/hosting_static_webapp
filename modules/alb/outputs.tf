@@ -8,5 +8,4 @@ output "alb_dns_name" {
 
 output "alb_zone_id" {
   value = aws_lb.application_load_balancer.zone_id
-
 }
