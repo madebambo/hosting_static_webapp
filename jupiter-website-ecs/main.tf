@@ -74,3 +74,9 @@ module "nat_gateway" {
     alb_target_group_arn        = module.application_load_balancer.alb_target_group_arn
   }
 
+# asg module
+module "auto_scaling_group" {
+  source       = "../modules/asg"
+  ecs_cluster  = module.ecs.ecs_cluster
+  ecs_service  = module.ecs.ecs_service
+}
